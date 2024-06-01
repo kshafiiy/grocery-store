@@ -1,0 +1,570 @@
+*{
+    margin: 2px;
+}
+
+body{
+    font-size: 12px;
+    height: 100vh;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+/*HEADER SECTION*/
+
+.flex-header{
+    background-color:#0A6847;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px 5px 0px 0px;
+    margin-top: 1rem;
+}
+.flex-link{
+    background-color:#0A6847;
+    width: 99%;
+    
+    height: 135px;
+    padding-top: 1rem;
+}
+.circle {
+    display: inline-block;
+    width: 45px; /* Adjust the width and height as needed */
+    height: 45px; /* This will make the circle */
+    line-height: 45px; /* Center the text vertically */
+    text-align: center; /* Center the text horizontally */
+    border-radius: 50%; /* Makes the element circular */
+    background-color: #FF7D29;/* Background color of the circle */
+    font-size: 16px;
+    color: #fff; /* Text color */
+    font-family: "Belgrano", serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  
+.flex-up-header{
+    background-color: #0A6847;
+    flex: 1 1 3rem ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-up-header .search {
+    width: 70%;
+    height: 40px;
+    border: none;
+    text-align:justify;
+    padding-left: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.flex-up-header .login{
+    width: 5%;
+    height: 40px;
+    background-color: #FF7D29;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    color: white;
+}
+.flex-up-header .cart{
+    background-color: #0A6847;
+    border: 0px;
+    height: 3rem;
+}
+.flex-up-header .cart img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 20px ;
+    color: #FF7D29;
+}
+.flex-up-header h1{
+    color: #ffffff;
+    font-family: "Belgrano", serif;
+    font-weight: 400;
+    font-style: normal;      
+}
+.flex-down-header{
+    background-color: #0A6847;
+    flex: 3 3 4rem;  
+}
+.flex-down-header ul{
+    list-style: none;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-down-header ul li select{
+    background-color: #fcfffe;
+    color: rgb(0, 0, 0);
+    border: 1px;
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    border-radius: 3px;
+}
+.flex-down-header ul li select:hover{
+    background-color: #FF7D29;
+}
+.flex-down-header ul li{
+    cursor: pointer;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    flex: auto;
+}
+.flex-down-header ul li:hover{
+    flex-grow: 1;
+    border-radius: 5px;
+}
+.flex-down-header a{
+    text-decoration: none;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: 600;
+}
+.flex-down-header a:hover{
+    color: #FF7D29;
+    font-weight: 600;
+}
+.flex-link ul{
+    list-style: none;
+    display: flex;
+    margin-left: -52px;
+}
+
+.flex-link ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.flex-link button{
+    margin-top: 1rem;
+    width: 10%;
+    height: 40px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: black;
+    margin-left:27px;
+}
+.flex-link-filter{
+    float: left;
+}
+.flex-link-relevance{
+    float: right;
+}
+.flex-link button:hover{
+    background-color: #555;
+    color: white;
+}
+/*MAIN SECTION*/
+.flex-main{
+    background-color:white;
+    margin-top: 4px;
+    padding-top: 1rem;
+    display: flex;
+    flex:1;
+    height: 37rem;
+    overflow: visible;
+}
+aside{
+    background-color: white;
+    flex: 1 1 1rem;
+    overflow: auto;
+}
+h2{
+   padding-top: 1rem;
+    text-align: justify;
+}
+.flex-manufactures p{
+    padding-top: 1rem;
+    text-align: justify;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    
+}
+.flex-main ul{
+    list-style: none;
+    float: left;
+    text-align: justify;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+    cursor: pointer;
+}
+.flex-main ul li select {
+    background-color:  rgb(234, 232, 232);
+    color: rgb(4, 4, 4);
+    border: 0px;
+    width: 230px;
+    height: 30px;
+    border-radius: 3px;
+    float: left;
+    margin-left: -20px;
+}
+.manufacture-item{
+    background-color: rgb(234, 232, 232);
+    width:49%;
+    margin-top: 15px;
+    height: 230px;
+    border-radius: 3px;
+}
+
+
+article{
+    background-color: white;
+    flex: 3 3;
+    display: flex;
+    text-align: justify;
+    overflow: auto;
+    
+}
+article p{ 
+    padding-left: 1rem;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.flex-products select {
+    background-color: #0A6847;
+    color: white;
+    border: 0px;
+    width: 190px;
+    height: 35px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 1rem;
+    margin-top: 15px;
+}
+.flex-products button{
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 3px;   
+}
+.wishlist{
+    margin-top: -2px;
+}
+.product-image{
+    border: 0px solid;
+    width: 99%;
+    height: 400px;
+
+    }
+img{
+    width: 100%;
+    height: 100%;
+}
+.product-price p{
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.product-button{
+    background-color: white;
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+.product-button >.addtocart{
+    background-color: white;
+    border:1px solid firebrick;
+    width: 60%;
+    color: red;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+}
+.product-button >.addtocart:hover{
+    background-color: firebrick;
+    color: white;
+    border: 1px solid firebrick;
+}
+.product-button >.wishlist{
+    width: 50px;
+    cursor: pointer;
+}
+.product-left{
+    border: 0px solid black;
+    background-color: white;
+    margin: 2;
+    display: inline-block;
+    flex-direction: column;
+    flex: 1 1 5rem;
+}
+.product-center{
+    background-color:white;
+    border: 0px solid;
+    margin: 2;
+    display: inline-block;
+    flex-direction: column;
+    flex: 1 1 5rem;
+}
+.product-right{
+    background-color: white;
+    border: 0px solid;
+    margin: 2;
+    display: inline-block;
+    flex-direction: column;
+    flex: 1 1 5rem;
+}
+
+
+
+/* FOOTER SECTION*/
+
+footer{
+    background-color:#0A6847;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+.footer-to-top{
+    background-color: white;
+    width: 99.9%;
+    height: 30px;
+    border: 1px solid;
+    border-radius:40px; 
+    text-align: center;
+    font-size: small;
+    padding-top: 1rem;
+    display: block;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 30px;
+}
+.footer-link{
+    display: flex;
+    justify-content: space-around;
+    padding-top:2rem ;
+    padding-bottom: 1rem;
+       font-family: "Belgrano", serif;
+    font-weight: 400;
+    font-style: normal; 
+
+}
+.footer-link ul li{
+    text-align: justify;
+    color: white;
+    list-style: none;
+    padding-bottom: 1rem;
+    font-weight: 600;
+
+}
+.footer-link li img{
+    width: 15px;
+    height: 15px;
+    float: left;
+   
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.help{
+    margin-left:14rem ;
+}
+.follow{
+    display: flex;
+    justify-content: space-between;
+}
+.followw{
+    padding-right: 14rem;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cright{
+    padding-right: 1rem;
+}
+.procust{
+    display: flex;
+    flex-direction: row;
+    
+}
+.tersec{
+    display: flex;
+    flex-direction: row;
+}
+ 
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px){
+    body{
+        font-size: 12px;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #0A6847;
+    }
+    .flex-header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .flex-up-header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    h1{
+        text-align: justify;
+    }
+    .flex-up-header > .search{
+        flex:1 40px;
+        width: 99%;
+    }
+    .flex-up-header button{
+        flex-direction:row ;
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+    .flex-up-header .login{
+        width: 90px;
+        height: 40px;
+        align-self: flex-start;
+    }
+    .flex-up-header .cart{
+        align-self: flex-end;
+        margin-top: -39px;
+    }
+
+    .flex-down-header ul{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .flex.flex-down-header ul li:hover{
+        background-color: green;
+        
+    }
+    .flex-link{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    .flex-link ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .flex-link button{
+        display: none;
+    }
+  
+
+    /* MAIN SECTION*/
+
+    .flex-main{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        flex-direction: row;
+    
+    }
+    img{
+        object-fit: contain;
+    }
+ 
+    .flex-products{
+        flex-direction:column;
+        margin: 0;
+        height: 100px;
+
+    }
+    .product-button{
+        margin: 0;
+        margin-top: 2px;
+    }
+    .flex-manufactures{
+        display: none;
+    }
+    .footer-link{
+        display: flex;
+        flex-direction: row;
+        font-family: "Belgrano", serif;
+        font-weight: 400;
+        font-style: normal; 
+    }
+    .aboutus{
+        margin-left: -6rem;
+    }
+    .helpp{
+        margin-left: 3rem;
+    }
+    .followw{
+        margin-left: -8rem;
+    }
+    .getapp{
+        margin-left: -15em;
+    }
+
+}
+
+    @media (max-width: 540px){
+    /*FOOTER*/
+    .flex-footer{
+        display: block;
+        width: 100%;
+    }
+    .footer-link{
+        display: flex;
+        flex-direction: column;
+        font-family: "Belgrano", serif;
+        font-weight: 100;
+        font-style: normal; 
+    }
+    .about{
+        display: flex;
+        margin-left: 4rem;
+    }
+    .follow{
+        display: flex;
+        margin-top: 1rem;
+        margin-left:6rem;    }
+   
+    .getapp{
+        width: 120px;
+        text-align: justify;
+        height: 110px;
+        margin-left: -90rem;
+    }
+    .copyright{
+        display: flex;
+        flex-direction: column;
+    }
+    .coppy{
+
+    }
+    .pri,.cust ,.ter ,.sec{
+        display: flex;
+    }
+
+    }
+
+
+
